@@ -16,10 +16,7 @@ def run():
 		
     # Compute the test per image or by means of sliding window method
     if cfg.exp_methodology == 2:
-        #Get the crops of the test images using MATLAB
-        detect_signals.run()
-        #Classify the images
-        detector.testFolder_colorenh_ccl()	
+        detector.testFolder_colorenh_ccl()
     elif cfg.exp_methodology == 1:
         detector.testFolder_perImage()
     else:
